@@ -6,7 +6,7 @@ const AccountServices = {
 
     signIn: function(currentUser){
         let user = JSON.parse(localStorage.getItem("user"));
-        if(currentUser.email === user.email && currentUser.password === user.password){
+        if(user && currentUser && currentUser.email === user.email && currentUser.password === user.password){
             return user;
         }
         else{
