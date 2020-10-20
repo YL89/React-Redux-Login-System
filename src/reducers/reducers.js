@@ -25,7 +25,7 @@ function userLogin(state = initialUserState, action) {
         case userConstants.LOGOUT: {
             return {
                 isLoggedIn: false,
-                user: null
+                user: {}
             };
         }
         default:

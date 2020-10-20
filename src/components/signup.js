@@ -24,7 +24,6 @@ export default function Signup() {
     const onSubmit = () => {
         AccountServices.registerUser(user);
         history.push('/');
-        console.log(user);
     }
 
 
